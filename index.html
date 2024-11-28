@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Busan Tourism Map</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Busan Tourism Map</h1>
+
+  <div id="buttons">
+    <button class="category-btn" onclick="showMap('맛집')">Busan Food</button>
+    <button class="category-btn" onclick="showMap('병원')">Busan Hospital</button>
+    <button class="category-btn" onclick="showMap('명소')">Busan Hotplace</button>
+    <button class="category-btn" onclick="showMap('쇼핑')">Busan Shopping</button>
+    <button class="category-btn" onclick="showMap('안내소')">Busan Tourist Information Center</button>
+    <button class="category-btn" onclick="showMap('축제')">Busan Festival</button>
+  </div>
+
+  <!-- 지도를 표시할 div -->
+  <div id="map"></div>
+
+  <!-- 검색 결과 출력 창 -->
+  <p id="result"></p>
+
+  <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=66bb56bd796e4183ae7906d8b515a0fe&libraries=clusterer"></script>
+  <script src="js/project.js"></script>
+</body>
+</html>
