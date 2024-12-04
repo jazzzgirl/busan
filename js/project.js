@@ -37,7 +37,7 @@ function showMap(category) {
 
     let url;
     if (category === '맛집') {
-        const url = 'http://apis.data.go.kr/6260000/FoodService/getFoodKr?serviceKey=b6c66f0c39240fae0227e0122bbcf604&numOfRows=100&resultType=json';
+        const url = 'https://apis.data.go.kr/6260000/FoodService/getFoodKr?serviceKey=b6c66f0c39240fae0227e0122bbcf604&numOfRows=100&resultType=json';
     
     fetch(url)
     .then(res => res.json())   // json 파일을 객체로 변환
@@ -127,7 +127,7 @@ function showMap(category) {
     clusterer.addMarkers(markers);
     });
     } else if(category === '병원') {
-        const url = 'http://apis.data.go.kr/6260000/MedicInstitService/getMedicInstitInfo?serviceKey=b6c66f0c39240fae0227e0122bbcf604&pageNo=1&numOfRows=100&resultType=json';
+        const url = 'https://apis.data.go.kr/6260000/MedicInstitService/getMedicInstitInfo?serviceKey=b6c66f0c39240fae0227e0122bbcf604&pageNo=1&numOfRows=100&resultType=json';
         
         fetch(url)
         .then(res => res.json())
@@ -221,7 +221,7 @@ function showMap(category) {
             console.error('병원 데이터 로드 에러:', error);
         });
     } else if(category === '명소') {
-        const url = 'http://apis.data.go.kr/6260000/AttractionService/getAttractionKr?serviceKey=b6c66f0c39240fae0227e0122bbcf604&numOfRows=100&resultType=json';
+        const url = 'https://apis.data.go.kr/6260000/AttractionService/getAttractionKr?serviceKey=b6c66f0c39240fae0227e0122bbcf604&numOfRows=100&resultType=json';
     
     fetch(url)
     .then(res => res.json())   // json 파일을 객체로 변환
@@ -312,7 +312,7 @@ function showMap(category) {
     clusterer.addMarkers(markers);
     });//피치 끝    
     }else if(category === '쇼핑'){
-    const url = 'http://apis.data.go.kr/6260000/ShoppingService/getShoppingKr?serviceKey=b6c66f0c39240fae0227e0122bbcf604&numOfRows=100&resultType=json';
+    const url = 'https://apis.data.go.kr/6260000/ShoppingService/getShoppingKr?serviceKey=b6c66f0c39240fae0227e0122bbcf604&numOfRows=100&resultType=json';
     
     fetch(url)
     .then(res => res.json())   // json 파일을 객체로 변환
@@ -402,7 +402,7 @@ function showMap(category) {
     clusterer.addMarkers(markers);
     });//피치 끝    
     }else if(category === '안내소'){
-    const url = 'http://apis.data.go.kr/6260000/InfoOfficeService/getInfoOfficeKr?serviceKey=b6c66f0c39240fae0227e0122bbcf604&numOfRows=30&resultType=json';
+    const url = 'https://apis.data.go.kr/6260000/InfoOfficeService/getInfoOfficeKr?serviceKey=b6c66f0c39240fae0227e0122bbcf604&numOfRows=30&resultType=json';
     
     fetch(url)
     .then(res => res.json())   // json 파일을 객체로 변환
@@ -493,7 +493,7 @@ function showMap(category) {
     clusterer.addMarkers(markers);
     });//피치 끝    
     }else if(category === '축제'){
-    const url = 'http://apis.data.go.kr/6260000/FestivalService/getFestivalKr?serviceKey=b6c66f0c39240fae0227e0122bbcf604&numOfRows=100&resultType=json';
+    const url = 'https://apis.data.go.kr/6260000/FestivalService/getFestivalKr?serviceKey=b6c66f0c39240fae0227e0122bbcf604&numOfRows=100&resultType=json';
     
     fetch(url)
     .then(res => res.json())   // json 파일을 객체로 변환
